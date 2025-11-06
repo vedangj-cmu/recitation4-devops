@@ -29,6 +29,11 @@
       font-size: 1.1rem;
       color: #555;
     }
+    .book-rating {
+      font-size: 1.1rem;
+      color: #555;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
@@ -44,6 +49,7 @@
             <div class="card book-card">
               <div class="card-content">
                 <p class="book-title">{{ book.name }}</p>
+                <p class="book-rating">by {{ book.rating }}</p>
                 <p class="book-author">by {{ book.author }}</p>
               </div>
             </div>

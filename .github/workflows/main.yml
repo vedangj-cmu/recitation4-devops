@@ -26,6 +26,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt pytest
+          export PYTHONPATH=$PWD
           pytest -v
 
       - name: Log in to GHCR
